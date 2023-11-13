@@ -183,5 +183,35 @@ main {
     align-items: center;
     background: #333;
   }
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .logo img {
+    width: 65px;
+    border-radius: 30%;
+  }
+  .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .leaders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
