@@ -174,6 +174,24 @@ body {
     opacity: 1;
   }
 }
+@media only screen and (max-width: 480px) {
+  .menu a {
+    margin: 0;
+  }
+  .logo {
+    left: 0;
+  }
+  .logo img {
+    left: 0;
+  }
+  .hamburger {
+    right: 0;
+  }
+  .menu {
+    right: 0;
+    top: 12.4rem;
+  }
+}
 
 /*===menu hover===*/
 
@@ -370,6 +388,15 @@ main {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  body {
+    max-width: 100%;
+  }
+  .leader-card img {
+    width: 100%;
+    height: 100%;
+  }
+}
 /*=======About section========*/
 .about {
   display: flex;
@@ -669,4 +696,3 @@ main {
 .footer-socials a:hover {
   color: #00bcd4;
 }
-
