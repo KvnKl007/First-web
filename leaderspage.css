@@ -183,7 +183,7 @@ main {
     align-items: center;
     background: #333;
   }
-.logo {
+  .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
