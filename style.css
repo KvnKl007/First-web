@@ -175,17 +175,34 @@ body {
   }
 }
 @media only screen and (max-width: 480px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    height: 28.2vh;
+  }
   .menu a {
     margin: 0;
   }
   .logo {
+    position: relative;
     left: 0;
+    margin: 0;
   }
   .logo img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    margin: 0;
+  }
+  .logo a {
+    position: absolute;
+    top: 20px;
+    margin: 0;
     left: 0;
   }
   .hamburger {
-    right: 15px;
+    position: absolute;
+    right: 25px;
   }
   .menu {
     right: 0;
@@ -519,6 +536,26 @@ main {
   color: #fff;
 }
 
+@media only screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .container .card {
+    width: 90px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0;
+    right: -10px;
+  }
+}
+
 /*====Contact====*/
 
 .contact {
@@ -662,6 +699,43 @@ main {
 
   .contact-form {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 120%;
+  }
+  .contact-form h2 {
+    font-size: 1.5em;
+    position: relative;
+    margin: 0;
+    left: 0;
+  }
+  .contact-info {
+    max-width: 100%;
+  }
+  .contact-info-item {
+    size: 10px;
+  }
+  .contact-info-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .contact-info-icon i {
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+  }
+  .contact-info-content {
+    margin-left: 20px;
+  }
+  .contact-info-content p {
+    text-wrap: wrap;
   }
 }
 
