@@ -690,8 +690,6 @@ main {
 @media (max-width: 768px) {
   .row {
     flex-direction: column;
-    width: 100%;
-    margin: 0;
   }
 
   .contact-info {
@@ -707,6 +705,8 @@ main {
 @media (max-width: 480px) {
   .row {
     flex-direction: column;
+    width: 100%;
+    margin: 0;
   }
   .contact-form {
     width: 120%;
