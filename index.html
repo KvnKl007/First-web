@@ -4,6 +4,12 @@
     <meta name="viewport" content="width=device-width, initail-scale=1.0" />
     <meta charset="UTF-8" />
     <title>F.I.M</title>
+    <link
+      rel="icon"
+      href="images/Faith International M Logo.png"
+      type="image/png"
+      width="20px"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -34,10 +40,10 @@
     <main>
       <!-- home section-->
       <section id="home" class="home">
-        <img class="img-slide active" src="photo3.jpeg" alt="img" />
-        <img class="img-slide" src="photo2.jpeg" alt="img" />
-        <img class="img-slide" src="photo1.jpeg" alt="img" />
-        <img class="img-slide" src="photo5.jpeg" alt="img" />
+        <img class="img-slide active" src="images/photo3.jpeg" alt="img" />
+        <img class="img-slide" src="images/photo2.jpeg" alt="img" />
+        <img class="img-slide" src="images/photo1.jpeg" alt="img" />
+        <img class="img-slide" src="images/photo5.jpeg" alt="img" />
         <div class="intro active">
           <h1>
             Welcome <span> To <br />Faith Interantional Ministries</span>
@@ -231,22 +237,27 @@
               id="contact-form"
               action="https://formsubmit.co/faithfamily014@gmail.com"
               method="POST"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h2>Send Message</h2>
               <div class="input-box">
-                <input type="text" required="true" name="" />
+                <input type="text" required="true" name=name " />
                 <span>Full Name</span>
               </div>
 
               <div class="input-box">
-                <input type="email" required="true" name="" />
+                <input type="email" required="true" name="email" />
                 <span>Email</span>
               </div>
 
               <div class="input-box">
-                <textarea required="true" name=""></textarea>
+                <textarea required="true" name="message"></textarea>
                 <span>Type your Message...</span>
               </div>
+
+              <input type="hidden" name="_next" value="thanks.html" />
+              <input type="hidden" name="_template" value="box" />
 
               <div class="input-box">
                 <input type="submit" value="Send" name="" />
@@ -263,14 +274,22 @@
         <p>Faith International Ministries</p>
         <div class="footer-socials">
           <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/faith_international_ministries/"
+          <a
+            href="https://www.instagram.com/faith_international_ministries/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-          <a href="https://twitter.com/Faith_FIM"
+          <a
+            href="https://twitter.com/Faith_FIM"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fa-brands fa-x-twitter"></i
           ></a>
           <a
             href="https://www.youtube.com/@faithinternationalministriestv/featured"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fa-brands fa-youtube"></i
           ></a>
           <a href="#"><i class="fa-brands fa-telegram"></i></a>
