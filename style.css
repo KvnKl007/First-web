@@ -340,21 +340,6 @@ main {
   transition-property: clip-path;
   animation: slide 10s ease-in-out infinite;
 }
-@keyframes slide {
-  0%,
-  100% {
-    background-image: url(images/photo3.jpeg);
-  }
-  25% {
-    background-image: url(images/photo2.jpeg);
-  }
-  50% {
-    background-image: url(images/photo1.jpeg);
-  }
-  75% {
-    background-image: url(images/photo5.jpeg);
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .home {
@@ -797,7 +782,9 @@ main {
 }
 
 .contact-form .input-box input:focus ~ span,
-.contact-form .input-box textarea:focus ~ span {
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:valid ~ span {
   color: #e91e63;
   font-size: 12px;
   transform: translateY(-20px);
