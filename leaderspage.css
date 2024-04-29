@@ -15,13 +15,14 @@ body {
 }
 /*======Header=======*/
 .header {
+  top: 0;
   width: 100%;
   position: fixed;
   color: rgb(250, 248, 248);
   transition: 0.3s;
   padding: 0;
   margin: 0;
-  z-index: 1;
+  z-index: 1000;
   background: rgba(55, 54, 54, 0.314);
 }
 .nav-menu {
@@ -481,7 +482,6 @@ main {
     padding: 10px;
     transition: 0.5s;
     border: 30%;
-  
   }
   .leader-icon {
     position: relative;

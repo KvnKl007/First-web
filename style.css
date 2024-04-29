@@ -29,6 +29,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
+  z-index: 1000;
+
 }
 .logo {
   display: flex;
@@ -654,6 +656,22 @@ h2 {
     left: 0;
     right: -10px;
   }
+}
+
+.Faith{
+  background-color: darkblue;
+  width: 60%;
+  height: 5vh;
+  border-radius: 8px;
+  border: 10px solid none;
+  border-style: round;
+  margin-bottom: -30px;
+  margin-left: -90%;
+}
+.Faith a{
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /*====Contact====*/
