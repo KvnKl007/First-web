@@ -371,6 +371,7 @@ main {
 }
 
 /*=======Event section========*/
+
 .event {
   background-color: whitesmoke;
   min-height: 700px;
@@ -500,6 +501,7 @@ h2 {
     grid-auto-columns: 100%;
   }
 }
+
 
 /*=======About section========*/
 .about {
