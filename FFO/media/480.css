@@ -1,0 +1,128 @@
+@media (max-width: 480px) {
+  .hero .hero-content h1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 740px) {
+  .hamburger {
+    position: relative;
+    right: 30px;
+  }
+  .menu-btn {
+    position: relative;
+    right: 0;
+  }
+  .nav .menu ul {
+    top: 0;
+  }
+  .active {
+    transform: translateY(99px);
+  }
+  .header .nav {
+    gap: 100px;
+    padding-inline: 10px;
+  }
+  .nav .logo {
+    position: relative;
+  }
+  .nav .logo img {
+    position: relative;
+    width: 150px;
+    margin-left: 10px;
+  }
+  .hero .hero-content {
+    position: relative;
+    display: flex;
+    width: 100px;
+    margin-left: 80px;
+  }
+  .hero .hero-content h1 {
+    font-size: 40px;
+  }
+  .event h2 {
+    font-size: 40px;
+  }
+  .what-we-do .what-content {
+    position: relative;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .what-we-do .what-content .what-cont {
+    position: relative;
+    flex-direction: column;
+
+    padding: 0;
+  }
+  .what-we-do .what-content .what-cont .what-card {
+    position: relative;
+    width: 280px;
+  }
+  .what-we-do .what-content h2 {
+    position: relative;
+    font-size: 40px;
+  }
+  .about-us .ellipse-bg img {
+    position: relative;
+    width: 100px;
+  }
+  .about-us {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .about-us .about-container {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us .about-container img {
+    width: 300px;
+  }
+  .about-us .about-container .about-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .about-us .about-container .about-content h2 {
+    position: relative;
+    font-size: 40px;
+  }
+  .about-us .about-container .about-content p {
+    position: relative;
+    font-size: 30px;
+    width: 200px;
+    text-align: center;
+  }
+  .testimonies .testimonies-cont h2 {
+    position: relative;
+    margin-left: 20px;
+    font-size: 40px;
+  }
+  .testimonies .testimonies-content {
+    text-align: center;
+  }
+  .footer .top {
+    position: relative;
+    margin-left: 10px;
+  }
+  .footer .top .connect .mail {
+    position: relative;
+    width: 300px;
+  }
+  .footer .top .logo-bottom .logo-content {
+    position: relative;
+    flex-direction: column;
+  }
+  .footer .top .logo-bottom .logo-content button {
+    padding: 10px;
+  }
+  .footer .top .logo-bottom a img {
+    width: 150px;
+  }
+}

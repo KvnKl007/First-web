@@ -1,0 +1,109 @@
+@media (max-width: 900px) {
+  .header .pre-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    right: 0;
+  }
+  .menu-btn {
+    display: block;
+    right: 80px;
+  }
+  .nav .menu ul {
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(245, 245, 245, 0.72);
+    transition: 0.5s ease;
+  }
+  .active {
+    min-height: 20rem;
+    transform: translateY(127px);
+  }
+  .nav .menu ul a {
+    font-size: 1.2rem;
+    text-align: center;
+    transition: 0.3s ease;
+    opacity: 1;
+  }
+  .hero .hero-content {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .ellipse-bg2 {
+    display: none;
+  }
+  .about-us .ellipse-bg img {
+    width: 200px;
+  }
+  .about-us .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-us .about-container .about-content {
+    margin-left: 0;
+  }
+  .testimonies-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonies-cont .testimonies-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  .testimonies-cont .testimonies-content {
+    position: relative;
+    margin-top: 200px;
+  }
+  .testimonies .ellipse-bg3 {
+    top: 600px;
+  }
+  .footer .top {
+    flex-direction: column;
+    margin-left: 80px;
+  }
+  .footer .top .connect {
+    align-items: start;
+  }
+}
+
+@media (max-width: 1100px) {
+  .what-we-do .what-content .what-cont .what-card {
+    width: 300px;
+  }
+  .what-we-do .ellipse-bg2 img {
+    position: relative;
+    display: flex;
+    width: 250px;
+  }
+  .ellipse-bg3 {
+    z-index: -1;
+  }
+  .ellipse-bg3 img {
+    position: relative;
+    width: 100px;
+    top: 100px;
+  }
+  .ellipse-bg4 img {
+    position: relative;
+    width: 100px;
+    top: 30px;
+  }
+  .testimonies .testimonies-cont h2 {
+    margin-left: 50px;
+  }
+}
