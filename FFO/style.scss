@@ -499,6 +499,7 @@ header {
         position: relative;
         img {
           position: relative;
+          width: 300px;
         }
         .testimony {
           background-size: cover;
@@ -506,7 +507,7 @@ header {
         i {
           position: absolute;
           color: red;
-          top: 70px;
+          top: 60px;
           left: 130px;
           cursor: pointer;
           font-size: 40px;

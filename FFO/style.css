@@ -515,6 +515,7 @@ header {
 }
 .testimonies .testimonies-cont .testimonies-container .testimonies-card img {
   position: relative;
+  width: 300px;
 }
 .testimonies .testimonies-cont .testimonies-container .testimonies-card .testimony {
   background-size: cover;
@@ -522,7 +523,7 @@ header {
 .testimonies .testimonies-cont .testimonies-container .testimonies-card i {
   position: absolute;
   color: red;
-  top: 70px;
+  top: 60px;
   left: 130px;
   cursor: pointer;
   font-size: 40px;
