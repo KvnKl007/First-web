@@ -16,7 +16,7 @@ body {
 /*======Header=======*/
 .header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   color: rgb(250, 248, 248);
   transition: 0.3s;
   padding: 0;
@@ -511,21 +511,16 @@ h2 {
   background: #fff;
   height: auto;
   width: auto;
-  gap: 10px;
+  gap: 40px;
 }
 .about h2 {
   font-size: 40px;
   font-weight: bold;
-  color: #635c5c;
+  color: #333;
   margin: 30px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
-.about p {
-  font-size: 20px;
-  font-weight: 100;
-  color: #000;
-  margin: 30px;
-}
+
 .container {
   width: auto;
   position: relative;
@@ -546,39 +541,40 @@ h2 {
 }
 
 .container .card .face {
-  margin-bottom: 60%;
-  width: 400px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   transition: 0.5s;
-  color: rgb(204, 230, 237);
-  border: 5px solid;
-  border-radius: 4px;
-  border-color: #000;
-  border: royalblue;
 }
 
 .container .card .face.face1 {
   position: relative;
-  background: #e3e9ec;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  z-index: 1;
   transform: translateY(100px);
 }
 
 .container .card:hover .face.face1 {
-  background: #f3f2f3;
+  background: #ff0057;
   transform: translateY(0);
 }
 
 .container .card .face.face1 .content {
-  opacity: 0.2;
+  opacity: 0.4;
   transition: 0.5s;
+  display: flex;
+  transition: 0.3s;
 }
 
 .container .card:hover .face.face1 .content {
-  opacity: 5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .container .card .face.face1 .content img {
@@ -588,7 +584,7 @@ h2 {
 .container .card .face.face1 .content h3 {
   margin: 10px 0 0;
   padding: 0;
-  color: #1f1d1d;
+  color: #333;
   text-align: center;
   font-size: 1.5em;
 }
@@ -601,18 +597,24 @@ h2 {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.8);
   transform: translateY(-100px);
 }
 
 .container .card:hover .face.face2 {
   transform: translateY(0);
 }
-
+.container .card .face.face2 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .container .card .face.face2 .content p {
   margin: 0;
   padding: 0;
   color: #333;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .container .card .face.face2 .content a {
@@ -651,22 +653,6 @@ h2 {
     left: 0;
     right: -10px;
   }
-}
-
-.Faith {
-  background-color: darkblue;
-  width: 60%;
-  height: 5vh;
-  border-radius: 8px;
-  border: 10px solid none;
-  border-style: round;
-  margin-bottom: -30px;
-  margin-left: -90%;
-}
-.Faith a {
-  color: orange;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 /*====Contact====*/
@@ -926,6 +912,17 @@ footer {
 }
 .fellowship {
   margin-top: 30px;
+}
+.fellowship ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.fellowship ul li {
+  font-size: 16px;
+  font-weight: 300;
 }
 .footer-socials {
   display: flex;

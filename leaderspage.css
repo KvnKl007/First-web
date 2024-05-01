@@ -366,11 +366,12 @@ main {
 /*=======Leadership section========*/
 
 .leadership {
-  position: relative;
   display: flex;
   flex-direction: column;
   text-align: left;
   background: #c8d9d8;
+  min-height: 60vh;
+  margin-top: 93px;
 }
 .leadership h2 {
   font-size: 40px;
@@ -384,11 +385,10 @@ main {
   position: relative;
   background: white;
   border-radius: 0px;
-  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
   margin: 30px;
-  justify-content: space-between;
   gap: 50px;
-  height: 600px;
+  height: 60vh;
   transition: 0.3s;
 }
 .pastor-card {
@@ -412,7 +412,7 @@ main {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   padding: 10px;
   transition: 0.5s;
   right: 40px;
@@ -422,21 +422,39 @@ main {
   text-decoration: none;
   color: #0184ff;
 }
-
-.leadership-container .leader-word {
+.leader-more {
+  margin: 15px 0 0;
+  display: flex;
   position: relative;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  right: 40px;
+  width: 100px;
+  border: 1px solid #333;
+}
+.leader-card .leader-more:hover {
+  background: #333;
+  color: #fff;
+}
+.leadership-container .leader-word {
   display: flex;
   flex-direction: column;
-  overflow-wrap: break-word;
   text-align: justify;
+}
+.leader-word {
+  position: relative;
+  overflow-wrap: break-word;
+  width: auto;
   background: #00bcd4;
 }
 .leader-word h2 {
   font-size: 30px;
   font-weight: normal;
-  color: #faf8f8;
+  color: #a09f9f;
   margin: 30px;
-  text-align: center;
 }
 .leader-word h3 {
   font-size: 40px;
@@ -450,16 +468,14 @@ main {
   margin: 30px;
 }
 .leader-word a {
-  display: relative;
+  display: inline-block;
   text-decoration: none;
   font-weight: 900;
   color: #333;
   padding: 10px;
   width: 35%;
+  margin: 30px;
   border: 1px solid #333;
-  margin: 70px;
-  transition: 0.5s;
-  top: -50px;
 }
 .leader-word a:hover {
   background: #333;
@@ -467,21 +483,16 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-  .leadership {
-    position: relative;
-    min-height: 150vh;
-  }
   .leadership-container {
     flex-direction: column;
   }
-  .pastor-card img {
+  .leader-card img {
     position: relative;
     width: 100%;
     height: auto;
     right: 0px;
     padding: 10px;
     transition: 0.5s;
-    border: 30%;
   }
   .leader-icon {
     position: relative;
@@ -499,7 +510,7 @@ main {
   body {
     max-width: 100%;
   }
-  .pastor-card img {
+  .leader-card img {
     width: 100%;
     height: 100%;
   }
@@ -542,55 +553,6 @@ main {
   width: 100%;
   height: auto;
   transition: 0.5s;
-}
-.container .card .face {
-  margin-bottom: 60%;
-  width: 400px;
-  height: 250px;
-  transition: 0.5s;
-  color: rgb(204, 230, 237);
-  border: 5px solid;
-  border-radius: 4px;
-  border-color: #000;
-  border: royalblue;
-
-}
-
-.container .card .face.face1 {
-  position: relative;
-  background: #e3e9ec;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  transform: translateY(100px);
-  
-}
-
-.container .card:hover .face.face1 {
-  background: #f3f2f3;
-  transform: translateY(0);
-}
-
-.container .card .face.face1 .content {
-  opacity: 0.2;
-  transition: 0.5s;
-}
-
-.container .card:hover .face.face1 .content {
-  opacity: 5;
-}
-
-.container .card .face.face1 .content img {
-  max-width: 100px;
-}
-
-.container .card .face.face1 .content h3 {
-  margin: 10px 0 0;
-  padding: 0;
-  color: #1f1d1d;
-  text-align: center;
-  font-size: 1.5em;
 }
 
 .leader-card {
