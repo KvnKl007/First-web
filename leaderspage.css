@@ -192,18 +192,7 @@ body {
   }
   .logo {
     position: relative;
-    left: 0;
-    margin: 0;
-  }
-  .logo img {
-    left: 0;
-    margin: 0;
-  }
-  .logo a {
-    position: absolute;
-    top: 20px;
-    margin: 0;
-    left: 0;
+    left: -150px;
   }
   .hamburger {
     position: absolute;
@@ -231,6 +220,7 @@ body {
   text-align: left;
   background: #c8d9d8;
   height: auto;
+  margin-top: 93px;
 }
 .leadership h2 {
   font-size: 40px;
@@ -318,6 +308,9 @@ body {
   .leadership-container {
     flex-direction: column;
   }
+  .leadership {
+    margin-top: 106px;
+  }
   .pastor-card img {
     position: relative;
     width: 100%;
@@ -344,6 +337,9 @@ body {
 @media only screen and (max-width: 480px) {
   body {
     max-width: 100%;
+  }
+  .leadership {
+    margin-top: 183px;
   }
   .leader-card img {
     width: 100%;
