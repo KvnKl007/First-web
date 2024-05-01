@@ -924,6 +924,9 @@ footer {
   transition: 0.3s;
   text-decoration: underline;
 }
+.fellowship{
+  margin-top: 30px;
+}
 .footer-socials {
   display: flex;
   flex-direction: column;
@@ -947,7 +950,6 @@ footer {
 .footer-socials a:hover {
   color: #00bcd4;
 }
-
 @media (max-width: 480px) {
   .footer {
     flex: 1;
