@@ -263,7 +263,11 @@ main {
   top: 0;
   left: 0;
   animation: animate 10s ease-in-out infinite;
+  filter: blur(5px);
+  animation: fade-in linear;
+  animation-timeline: view();
 }
+
 .home .intro.active {
   display: block;
   color: #fff;
@@ -330,7 +334,6 @@ main {
   transition-property: clip-path;
   animation: slide 10s ease-in-out infinite;
 }
-
 @media only screen and (max-width: 768px) {
   .home {
     margin: -0.1rem 0;
@@ -381,7 +384,7 @@ h2 {
   font-size: 48px;
   margin-top: 40px;
   margin-left: 30px;
-  color: #333;
+  color: #072362;
 }
 .wrapper {
   position: relative;
@@ -508,7 +511,7 @@ h2 {
   display: flex;
   position: relative;
   flex-direction: column;
-  background: #fff;
+  background: whitesmoke;
   height: auto;
   width: auto;
   gap: 40px;
@@ -516,7 +519,7 @@ h2 {
 .about h2 {
   font-size: 40px;
   font-weight: bold;
-  color: #333;
+  color: #072362;
   margin: 30px;
   margin-top: 30px;
 }
@@ -541,8 +544,9 @@ h2 {
 }
 
 .container .card .face {
-  width: 300px;
+  width: 350px;
   height: 200px;
+  border-radius: 10px;
   transition: 0.5s;
 }
 
@@ -557,7 +561,7 @@ h2 {
 }
 
 .container .card:hover .face.face1 {
-  background: #ff0057;
+  background: #c8d9d885;
   transform: translateY(0);
 }
 
@@ -661,23 +665,26 @@ h2 {
   position: relative;
   display: flex;
   flex-direction: column;
+  background: whitesmoke;
 }
 .contact h2 {
   font-size: 40px;
   font-weight: bold;
-  color: #333;
+  color: #072362;
   margin: 50px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  background: #00bcd4;
+  background: #c8d9d885;
   justify-content: space-between;
   align-items: center;
   margin: 30px;
   padding: 30px;
   gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.67);
 }
 
 .contact-info {
@@ -713,12 +720,12 @@ h2 {
 }
 
 .contact-info-content p {
-  color: #fff;
+  color: #666;
   font-size: 1em;
 }
 
 .contact-form {
-  background-color: #fff;
+  background-color: #ffffff8f;
   padding: 40px;
   width: 45%;
   padding-bottom: 20px;
@@ -749,6 +756,7 @@ h2 {
   border-bottom: 2px solid #333;
   outline: none;
   resize: none;
+  background: #ffffff0f;
 }
 
 .contact-form .input-box span {
@@ -773,19 +781,20 @@ h2 {
 
 .contact-form .input-box input[type="submit"] {
   width: 100%;
-  background: #00bcd4;
+  background: #c8d9d8be;
   color: #fff;
   border: none;
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
-  border: 1px solid #00bcd4;
+  border: 1px solid #c8d9d8be;
+  border-radius: 20px;
   transition: 0.5s;
 }
 
 .contact-form .input-box input[type="submit"]:hover {
   background: #fff;
-  color: #00bcd4;
+  color: #c8d9d8be;
 }
 
 @media (max-width: 768px) {
