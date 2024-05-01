@@ -408,18 +408,15 @@ main {
 .leader-icon {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   position: relative;
-  font-size: 25px;
-  padding: 10px;
+  font-size: 30px;
   transition: 0.5s;
-  right: 40px;
   gap: 30px;
 }
 .leader-icon a {
   text-decoration: none;
-  color: #0184ff;
+  color: #333;
 }
 .leadership-container .leader-word {
   display: flex;
