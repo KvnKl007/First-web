@@ -264,8 +264,24 @@ main {
   left: 0;
   animation: animate 10s ease-in-out infinite;
   filter: blur(5px);
-  animation: fade-in linear;
-  animation-timeline: view();
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0.8;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 .home .intro.active {
@@ -279,6 +295,9 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit -300px;
 }
 .intro h1 {
   font-size: 60px;
@@ -385,6 +404,9 @@ h2 {
   margin-top: 40px;
   margin-left: 30px;
   color: #072362;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit -200px;
 }
 .wrapper {
   position: relative;
