@@ -263,7 +263,7 @@ main {
   top: 0;
   left: 0;
   animation: animate 10s ease-in-out infinite;
-  filter: blur(5px);
+  filter: blur(3px);
 }
 @media (prefers-reduced-motion: no-preference) {
   @keyframes fade-out {
@@ -553,6 +553,9 @@ h2 {
   margin-left: 30px;
   display: flex;
   gap: 5px;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit -300px;
 }
 .about p a {
   text-decoration: none;
