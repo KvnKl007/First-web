@@ -21,22 +21,6 @@ body {
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.3);
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background: #072362;
-  color: #e4b71d;
-  font-size: 20px;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
-
 .menu-btn {
   position: absolute;
   display: flex;
@@ -145,12 +129,136 @@ header {
 .header .nav .menu ul li a:hover {
   color: #e4b71d;
 }
+@media (max-width: 900px) {
+  .header .pre-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    right: 0;
+  }
+  .menu-btn {
+    display: block;
+    right: 80px;
+  }
+  .nav .menu ul {
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(245, 245, 245, 0.72);
+    transition: 0.5s ease;
+  }
+  .active {
+    min-height: 20rem;
+    transform: translateY(127px);
+  }
+  .nav .menu ul a {
+    font-size: 1.2rem;
+    text-align: center;
+    transition: 0.3s ease;
+    opacity: 1;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container2 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer .top {
+    flex-direction: column;
+    margin-left: 80px;
+  }
+  .connect {
+    align-items: start;
+  }
+}
+@media (max-width: 740px) {
+  .hamburger {
+    position: relative;
+    right: 30px;
+  }
+  .menu-btn {
+    position: relative;
+    right: 0;
+  }
+  .nav .menu ul {
+    top: 0;
+  }
+  .active {
+    transform: translateY(99px);
+  }
+  .header .nav {
+    gap: 100px;
+    padding-inline: 10px;
+  }
+  .nav .logo {
+    position: relative;
+  }
+  .nav .logo img {
+    position: relative;
+    width: 150px;
+    margin-left: 10px;
+  }
+  .nav .menu ul {
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(245, 245, 245, 0.72);
+    transition: 0.5s ease;
+  }
+  .active {
+    min-height: 20rem;
+    transform: translateY(127px);
+  }
+  .nav .menu ul a {
+    font-size: 1.2rem;
+    text-align: center;
+    transition: 0.3s ease;
+    opacity: 1;
+  }
+  .first-container {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card-img img {
+    width: 300px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .second-container {
+    margin-block: 20px;
+  }
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
 
 /*** Main team ***/
 .team {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   margin-top: 200px;
 }
 h1 {
@@ -161,29 +269,35 @@ h1 {
 .first-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
   margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .container {
+  position: relative;
   display: flex;
   gap: 100px;
   background-color: whitesmoke;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.3);
+  overflow-wrap: break-word;
 }
 .card-img img {
-  width: 400px;
+  max-width: 400px;
   border-radius: 10px;
 }
 .container2 {
   display: flex;
-  flex-direction: row-reverse;
   gap: 100px;
   background-color: whitesmoke;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.3);
+  overflow-wrap: break-word;
 }
 .content {
   display: flex;
@@ -191,7 +305,7 @@ h1 {
   gap: 20px;
   color: #072362;
 }
-.content h1 {
+.content h2 {
   font-size: 40px;
   font-weight: 700;
 }
@@ -202,7 +316,7 @@ h1 {
 .content p {
   font-size: 16px;
   font-weight: 300;
-  width: 600px;
+  width: auto;
 }
 .socails {
   display: flex;
@@ -227,7 +341,6 @@ h1 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  width: 400px;
   margin-top: 50px;
   background-color: whitesmoke;
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.3);
