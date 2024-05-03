@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Poppin sans", sans-serif;
-  background: url(/faithcross.png) no-repeat;
+  background: url(/faithcross.png) no-repeat fixed center/cover;
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -145,6 +145,8 @@ footer {
 }
 .footer {
   position: relative;
+  top: 300px;
+  bottom: 0;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
