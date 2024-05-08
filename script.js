@@ -22,6 +22,9 @@ var sliderNav = function(manual){
     btns[manual].classList.add("active");
     slides[manual].classList.add("active");
     intros[manual].classList.add("active");
+    //animating text 
+    intros[manual].style.animation = "slideRight 1s ease-in-out";
+    intros[manual].style.transition = "all .5s ease-in-out";
 
     currentSlide = manual;
 

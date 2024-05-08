@@ -283,6 +283,16 @@ main {
       opacity: 1;
     }
   }
+  @keyframes slideRight {
+    0% {
+      opacity: 0;
+      scale: 0.5;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
 }
 
 .home .intro.active {
@@ -296,9 +306,6 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  animation: fade-out linear;
-  animation-timeline: view();
-  animation-range: exit -300px;
 }
 .intro h1 {
   font-size: 60px;
