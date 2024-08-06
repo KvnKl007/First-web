@@ -365,9 +365,10 @@ h1 {
   position: relative;
   display: flex;
   width: 350px;
-  height: auto;
+  height: 350px;
   align-self: center;
   justify-content: center;
+  object-fit: contain;
 }
 .cards .content2 {
   position: relative;
