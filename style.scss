@@ -150,6 +150,7 @@ header {
     justify-content: space-between;
     padding-inline: 80px;
     padding-block: 10px;
+    background-color: #d9d9d952;
     width: 100%;
     .menu {
       display: flex;
@@ -179,13 +180,14 @@ header {
 .hero {
   position: relative;
   top: -125px;
-  min-height: 90vh;
-  background: url(/FFO/images/hero.png) no-repeat;
+  min-height: 95vh;
+  background-color: antiquewhite;
   background-size: cover;
   z-index: 0;
   .hero-content {
     position: relative;
     display: flex;
+    flex-direction: column;
     top: 300px;
     width: 600px;
     margin-left: 80px;
@@ -198,6 +200,10 @@ header {
       span {
         color: #e4b71d;
       }
+    }
+    p {
+      font-weight: 400;
+      color: #072362;
     }
   }
 }
@@ -220,9 +226,9 @@ header {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
   }
   .wrapper i {
+    display: none;
     top: 50%;
     height: 50px;
     width: 50px;
@@ -250,13 +256,15 @@ header {
   .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
+    grid-auto-columns: calc((100% - 1px));
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    gap: 16px;
+    gap: 0;
     border-radius: 8px;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    box-shadow: 0px 4px 10px 4px #24242477;
   }
   .carousel::-webkit-scrollbar {
     display: none;
@@ -279,12 +287,14 @@ header {
   }
   .carousel .card {
     scroll-snap-align: start;
-    min-height: 342px;
     list-style: none;
     background: #fff;
     cursor: pointer;
     padding-bottom: 15px;
-    gap: 20px;
+    margin: 0 auto;
+    gap: 0px;
+    width: 1100px;
+    height: 300px;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.23);
@@ -341,6 +351,7 @@ header {
 .about-us {
   position: relative;
   min-height: 50vh;
+  margin-bottom: 100px;
   .ellipse-bg {
     position: absolute;
     left: 0;
@@ -354,9 +365,7 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
-    justify-content: space-around;
-    margin-top: 100px;
-    gap: 100px;
+    gap: 50px;
     img {
       width: 500px;
     }

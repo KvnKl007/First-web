@@ -164,6 +164,7 @@ header {
   justify-content: space-between;
   padding-inline: 80px;
   padding-block: 10px;
+  background-color: rgba(217, 217, 217, 0.3215686275);
   width: 100%;
 }
 .header .nav .menu {
@@ -189,14 +190,15 @@ header {
 .hero {
   position: relative;
   top: -125px;
-  min-height: 90vh;
-  background: url(/FFO/images/hero.png) no-repeat;
+  min-height: 95vh;
+  background-color: antiquewhite;
   background-size: cover;
   z-index: 0;
 }
 .hero .hero-content {
   position: relative;
   display: flex;
+  flex-direction: column;
   top: 300px;
   width: 600px;
   margin-left: 80px;
@@ -210,6 +212,10 @@ header {
 }
 .hero .hero-content h1 span {
   color: #e4b71d;
+}
+.hero .hero-content p {
+  font-weight: 400;
+  color: #072362;
 }
 
 /*** event section ***/
@@ -231,11 +237,10 @@ header {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 0;
 }
 .event .wrapper i {
-  top: 50%;
   display: none;
+  top: 50%;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -270,7 +275,7 @@ header {
   border-radius: 8px;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  box-shadow: 0px 4px 10px 4px #24242477;
+  box-shadow: 0px 4px 10px 4px rgba(36, 36, 36, 0.4666666667);
 }
 .event .carousel::-webkit-scrollbar {
   display: none;
@@ -285,8 +290,8 @@ header {
 .event .carousel.dragging .card {
   cursor: grab;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .event .carousel :where(.card, .img) {
   display: flex;
@@ -295,14 +300,14 @@ header {
 }
 .event .carousel .card {
   scroll-snap-align: start;
-  height: 300px;
-  width: 1100px;
-  margin: 0 auto;
   list-style: none;
   background: #fff;
   cursor: pointer;
   padding-bottom: 15px;
-  gap: 20px;
+  margin: 0 auto;
+  gap: 0px;
+  width: 1100px;
+  height: 300px;
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.23);
@@ -316,7 +321,7 @@ header {
   position: relative;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 .event .carousel .card h3 {
@@ -359,6 +364,7 @@ header {
 .about-us {
   position: relative;
   min-height: 50vh;
+  margin-bottom: 100px;
 }
 .about-us .ellipse-bg {
   position: absolute;
@@ -373,9 +379,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-  justify-content: space-around;
-  margin-top: 100px;
-  gap: 100px;
+  gap: 50px;
 }
 .about-us .about-container img {
   width: 500px;
@@ -492,7 +496,7 @@ header {
 }
 .testimonies .ellipse-bg3 img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .testimonies .testimonies-cont {
   position: relative;
@@ -522,11 +526,7 @@ header {
   position: relative;
   width: 300px;
 }
-.testimonies
-  .testimonies-cont
-  .testimonies-container
-  .testimonies-card
-  .testimony {
+.testimonies .testimonies-cont .testimonies-container .testimonies-card .testimony {
   background-size: cover;
 }
 .testimonies .testimonies-cont .testimonies-container .testimonies-card i {
@@ -696,4 +696,4 @@ header {
   font-size: 14px;
   color: #072362;
   text-align: center;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
