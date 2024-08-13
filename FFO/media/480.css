@@ -1,14 +1,14 @@
 @media (max-width: 480px) {
   .hero .hero-content h1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-left: 120px;
     line-height: 40px;
   }
 }
 
 @media (max-width: 740px) {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
   .hamburger {
     position: relative;
     right: 30px;
@@ -39,13 +39,26 @@
     position: relative;
     display: flex;
     width: 100px;
-    margin-left: 80px;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
   }
   .hero .hero-content h1 {
     font-size: 40px;
+    text-align: center;
+  }
+  .hero .hero-content p {
+    font-size: 14px;
+    width: 250px;
   }
   .event h2 {
     font-size: 40px;
+  }
+  .event {
+    display: none;
+  }
+  .event .carousel .card {
+    width: 330px;
   }
   .what-we-do .what-content {
     position: relative;
@@ -102,7 +115,7 @@
   .testimonies .testimonies-cont h2 {
     position: relative;
     margin-left: 20px;
-    font-size: 40px;
+    font-size: 32px;
   }
   .testimonies .testimonies-content {
     text-align: center;
