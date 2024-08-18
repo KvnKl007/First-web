@@ -13,6 +13,9 @@ body {
   padding: 0;
   font-family: "Poppin sans", sans-serif;
 }
+.button {
+  text-decoration: none;
+}
 /*======Header=======*/
 .header {
   width: 100%;
